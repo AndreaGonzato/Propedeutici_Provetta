@@ -23,19 +23,19 @@ endif
 # Add inputs and outputs from these tool invocations to the build variables 
 
 # All Target
-all: PP1read_and_write
+all: PP01read_and_write
 
 # Tool invocations
-PP1read_and_write: $(OBJS) $(USER_OBJS)
+PP01read_and_write: $(OBJS) $(USER_OBJS)
 	@echo 'Building target: $@'
 	@echo 'Invoking: GCC C Linker'
-	gcc  -o "PP1read_and_write" $(OBJS) $(USER_OBJS) $(LIBS)
+	gcc  -o "PP01read_and_write" $(OBJS) $(USER_OBJS) $(LIBS)
 	@echo 'Finished building target: $@'
 	@echo ' '
 
 # Other Targets
 clean:
-	-$(RM) $(EXECUTABLES)$(OBJS)$(C_DEPS) PP1read_and_write
+	-$(RM) $(EXECUTABLES)$(OBJS)$(C_DEPS) PP01read_and_write
 	-@echo ' '
 
 .PHONY: all clean dependents

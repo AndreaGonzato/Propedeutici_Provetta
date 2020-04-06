@@ -25,6 +25,7 @@ int main(void) {
 	for (int i=0 ; i<length ; i++){
 		array[i] = i;
 	}
+	array[9] = 300;
 
 	printf("print array:\n");
 	print_array(array, length);
@@ -34,8 +35,6 @@ int main(void) {
 
 	printf("print array using binary base(array, 9, 12)\n");
 	print_array_using_binary_base(array, 9, 12);
-
-
 
 
 
